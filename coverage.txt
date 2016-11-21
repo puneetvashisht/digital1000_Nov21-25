@@ -1,0 +1,145 @@
+PuneetVashisht@gmail.com
+
+1. JavaScript
+	variable and datatypes
+	array and objects
+	functions
+		arguments
+		function in function
+		function as object
+		as parameters, callback
+		
+	DOM Manipulation
+	
+	Scope of variables
+	
+	Practicals: 
+		Dynamic Javascript Clock
+		Dynamic Clock with time, day, date, month and year
+		Dynamic table
+		Validation
+		Javascript CSS
+		CSS
+2. Jquery
+		javascript library
+		cdn
+	Syntax
+	Selectors
+	CSS
+	Dynamic Elements
+	Events
+	Validation
+	Ajax
+	
+3. AngularJS
+		javascript framework
+		
+	Syntax
+	Expression
+		Excercise: 10 min
+					priciple amount
+					rate
+					time
+				p * r * time / 100
+					{{simpleInterest}}
+					
+	Module
+	Controller
+		$rootScope : one rootScope per app
+		$scope: one scope per controller
+		childController
+		
+		Excercise: MVC 20 Min
+			// 1. add module
+			// 2. Add controller
+			// 3. pass scope to controller
+			// 4. add methods
+			// 5. store result in result
+		
+	Factory/service
+	Filter
+	searchable grid
+	ng-repeat
+	
+	Excercise: 10 min
+		reverse string filter
+		
+	Directive:
+		ng-app="myApp"
+		ng-model
+		ng-click
+		ng-repeat
+		
+		ng-disabled
+		ng-if
+		ng-show
+		ng-hide
+
+4.	Custom Directives
+	HTTP/ server side communication / Ajax
+		jquery: $.ajax({})
+		angular: $http({})
+	route/spa
+	form validation
+	
+	NodeJS with MongoDB
+		intall node
+		Basics
+			Create a new directory
+			open cmd
+			node file.js
+			
+			Server Express
+				open cmd
+				npm init -> package.json
+				npm install --save express body-parser
+				
+		
+		Node - Express(Server) - Angular - MongoDB
+		
+		MEAN App  == >  PollsApp
+		
+		
+
+NodeServer
+	body-parser
+	express
+		static
+			angularJS
+			
+	Mongodb.MongoClient.conntect
+		
+		
+Project:
+	PollsApp
+		static
+			templates:
+				1. newPoll 					
+					create a form to fill new poll and insert into database (mongodb) and move to #/polls
+				2. poll
+					Question
+						choices with radio button 
+						save button
+							save a counter in db with this particular poll
+					
+						result
+						progress bar
+				3. Polls page
+		
+		
+		
+Submit Project: Puneetvashisht@gmail.com
+	make sure to remove data and node_modules directories
+	zip and mail
+	
+	rename file and remove extension and mail
+	
+	send it by saturday 5.00PM
+		
+		
+		
+		
+		
+		
+		
+		
