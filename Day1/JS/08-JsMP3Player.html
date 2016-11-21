@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript</title>
+<style type="text/css">
+body {
+	text-align: center;
+	width: 920px;
+	margin: 50px auto;
+	background: DarkSeaGreen;
+}
+.nav{
+	width: 350px;
+	height: auto;
+	padding: 5px;
+	background: cornFlowerBlue;
+	float: left;
+}
+button{
+	font-size: 2em;
+	font-family: century;
+	display: block;
+	width: 325px;
+	margin: 5px auto;
+	background: AliceBlue;
+	box-shadow: 4px 4px 4px gray; 
+}
+.container{
+	background: cornFlowerBlue;
+	text-align: left;
+	width: 530px;
+	height: 305px;
+	font-size: 1.5em;
+	padding-left: 15px;
+	float: right;
+	overflow: auto;
+}
+</style>
+</head>
+<body onload="showList()">
+<h1>My Mp3 Player List</h1>
+<div class="nav">
+	<button onClick="add()">Add</button>
+	<button onClick="removeFirst()">RemoveFirst</button>
+	<button onClick="removeLast()">RemoveLast</button>
+	<button onClick="removeNth()">RemoveNth</button>
+	<button onClick="ascending()">AscendingOrder</button><!-- sort on defferent copy -->
+	<button onClick="descending()">Descending</button>
+</div>
+<div class="container">
+	<p id="playList"></p>
+</div>
+<script type="text/javascript">
+var songs = new Array("When you love someone","Lonely","Baby m addicted, m out of control","Big love", "Facebook", "O carol", "Nokia Linka", "Wracking Ball", "Titanic song", "SpiderMan Sound Effects", "When I look at you", "I adore you", "All the way up", "Let's be friends", "Once upon a dream");
+function add(){
+	var newSong = prompt("Enter new song", "");
+	if((newSong!="")&&(newSong!=null))
+	{
+		songs.push(newSong);
+	}
+	showList();
+}
+function removeFirst(){
+// remove first array node
+	songs.shift();
+	showList();
+	
+	
+}
+function removeLast(){
+	// remove the last array node
+	songs.pop();
+	showList();
+}
+function removeNth(){
+	var number = prompt("Enter the position of the song","");
+	if((number>0)&&(number<=songs.length)){
+		// remove the nth array node
+		var fromIndex = number - 1;
+		var elementsToRemove = 1
+		songs.splice(fromIndex, elementsToRemove);
+		showList();
+	}
+	else{
+		alert("Invalid position");
+	}
+}
+function ascending(){
+	songs.sort();
+	showList();
+}
+function descending(){
+	songs.sort().reverse();
+	showList();
+}
+function showList(){
+	var print = document.getElementById("playList");
+	
+/* 	make the playList empty */
+	print.innerHTML = "";
+		var len = songs.length;
+		
+/* 		fill the play list */
+		for(i=0; i<len; i++){
+			print.innerHTML += "<span>"+(i+1)+".) "+songs[i]+"</span><br/>";
+		}
+}
+</script>
+</body>
+</html>
