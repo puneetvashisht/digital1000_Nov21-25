@@ -5,6 +5,17 @@ PuneetVashisht@gmail.com
 	variable and datatypes
 	array and objects
 	functions
+		return
+		arguments
+		anonymous function
+		pass functions as an arguments
+		callback
+		scope
+			undefined vs not defined
+			
+		Practice time: 15 min
+			install chrome
+			brackets.io
 		
 	DOM Manipulation
 	CSS
