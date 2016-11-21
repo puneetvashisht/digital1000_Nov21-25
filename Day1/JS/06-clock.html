@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Clock Demo</title>
+	<style>
+		#page{
+			font-size: 16px;
+			padding: 20px 50px;
+			margin: 20px auto;
+			background: #ddd;
+			width: 80%;
+			margin-top: 50px;
+		}
+		h1, h2{
+			text-align: center;
+		}
+		#clock{
+			width: 60%;
+			font: bold 1.5em Century;
+			border-radius: 15px;
+			margin: 20px auto;
+			background: Cornflowerblue;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+		<h1>JS clock</h1>
+		<button onclick="start()">Start</button>
+		<button onclick="stop()">Stop</button>
+		<hr/>
+		<div id="clock">
+			<h1 id='watch'>Clock</h1>
+			<h3 id="day">Day</h1>
+		</div>
+	</div>
+	
+	<script>
+		var timerId = null;
+		var watch = document.getElementById('watch');
+		var daysArr = ["Sunday", "Monday", "Tuesday"]
+		function start(){
+			watch.style.color = 'green';
+			var date = new Date();
+			
+//			watch.innerHTML = date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+			watch.innerHTML = date.toLocaleTimeString();
+			
+		var dayElement = document.getElementById('day');
+			dayElement.innerHTML = daysArr[date.getDay()]
+			
+			timerId = setTimeout(start, 1000);
+		}
+//		setInterval
+		
+		function stop(){
+			watch.style.color = 'red';
+			clearTimeout(timerId);
+		}
+	</script>
+</body>
+</html>

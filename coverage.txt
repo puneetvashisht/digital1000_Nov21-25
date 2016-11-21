@@ -21,10 +21,15 @@ PuneetVashisht@gmail.com
 	Excercise:
 		image
 		click this image, image should be changed
-	CSS
-		Javascript CSS
-	
 	Practicals: 
+		Dynamic Clock
+			changed text dynamically
+		CSS
+			Javascript CSS
+		
+		Dynamic Table
+		
+	
 2. Jquery
 
 3. AngularJS
