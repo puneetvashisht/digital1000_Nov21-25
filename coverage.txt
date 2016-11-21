@@ -18,10 +18,11 @@ PuneetVashisht@gmail.com
 			brackets.io
 		
 	DOM Manipulation
+	Excercise:
+		image
+		click this image, image should be changed
 	CSS
 		Javascript CSS
-	
-	Scope of variables
 	
 	Practicals: 
 2. Jquery
