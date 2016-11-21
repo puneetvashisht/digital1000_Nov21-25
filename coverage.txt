@@ -1,13 +1,10 @@
 PuneetVashisht@gmail.com
+------------------------
 
 1. JavaScript
 	variable and datatypes
 	array and objects
 	functions
-		arguments
-		function in function
-		function as object
-		as parameters, callback
 		
 	DOM Manipulation
 	CSS
