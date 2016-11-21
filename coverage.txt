@@ -28,6 +28,7 @@ PuneetVashisht@gmail.com
 			Javascript CSS
 		
 		Dynamic Table
+		Mp3 player
 		
 	
 2. Jquery
