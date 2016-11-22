@@ -38,6 +38,15 @@ PuneetVashisht@gmail.com
 	
 	Download jquery
 	  https://code.jquery.com/
+	  
+	Syntax
+	Selectors
+	
+	
+	
+	animations
+	validation
+	ajax
 	
 3. AngularJS
 
