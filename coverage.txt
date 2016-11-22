@@ -32,7 +32,13 @@ PuneetVashisht@gmail.com
 		
 	
 2. Jquery
-
+	jQuery is a fast and concise JavaScript Library created in 2006 with a nice motto 
+		− Write less, do more. 
+	jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
+	
+	Download jquery
+	  https://code.jquery.com/
+	
 3. AngularJS
 
 4. NodeJS
