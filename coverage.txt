@@ -45,7 +45,14 @@ PuneetVashisht@gmail.com
 	
 	Practice: 
 		Todo App (add css) : 30 - 40 mins
-	
+		
+	Upload your code to following directory
+		https://drive.google.com/drive/folders/0ByYjtCTdrTECS1JQQUdyRTdQM0k?usp=sharing
+		
+		Create a zip file and rename it to 
+			TodoApp_Name_EmpId_EmailId
+
+		no extensions required
 	
 	
 3. AngularJS
