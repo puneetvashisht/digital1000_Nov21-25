@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Jquery Animation</title>
+	<script src="jquery/jquery-3.1.1.min.js"></script>
+	<style>
+		.image{
+			border: 2px solid #e3538a;
+			border-radius: 10px;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$('#hideImg').click(function(){
+				$('img').hide();
+			})
+			$('#showImg').click(function(){
+				$('img').show();
+			})
+			$('#toggleImg').click(function(){
+				$('img').toggle(5000);
+			})
+			$('#animateImg').click(function(){
+				$('img').animate({width: 250},2000, function(){
+					$('img').addClass('image')
+				});
+			})
+		})
+	</script>
+</head>
+<body>
+	<button id="hideImg">Hide</button>
+	<button id="showImg">Show</button>
+	<button id="toggleImg">Toggle</button>
+	<button id="animateImg">Animate</button>
+	<hr/>
+	<img src="//lorempixel.com/150/150/sports/2/" alt="">
+</body>
+</html>

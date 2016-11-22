@@ -42,6 +42,8 @@ PuneetVashisht@gmail.com
 	Syntax
 	Selectors
 	Dynamic Elements
+	Animation
+	Validation
 	
 	Practice: 
 		Todo App (add css) : 30 - 40 mins
