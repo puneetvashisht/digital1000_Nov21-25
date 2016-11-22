@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Dynamic Elements Demo</title>
+	<script src="./jquery/jquery-3.1.1.min.js"></script>
+	<style>
+		.myDiv{
+			border: 3px solid black;
+			border-radius: 10px;
+		}
+		#myDivId{
+			width: 200px;
+			height: 300px;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			var myCustomDiv = $("<div>");
+			myCustomDiv.attr("id", "myDivId");
+			myCustomDiv.addClass("myDiv");
+			myCustomDiv.append($('<p>').html('I am custom first para'))
+					.append($('<p>').html('I am custom second para'))
+					.append($('<p>').html('I am custom third para'))
+					.append($('<p>').html('I am custom last para'))
+			$(myCustomDiv).appendTo(document.body)
+			
+			
+			var totalPara = $("#myDivId").find('p').length;
+			console.log(totalPara)
+			
+			var firstChildPara = $("#myDivId").find('p:first');
+			console.log($(firstChildPara).html())
+			
+			$("#myDivId").find('p:nth-child(3)').html("Changed");
+			
+			$("#myDivId").find('p:even').css({"color":"red"})
+			$("#myDivId").find('p:odd').css({"color":"green"})
+			
+			$('p').click(function(){
+				console.log($(this).html());
+				$(this).html("Clicked")
+			})
+			
+			
+		})
+	</script>
+</head>
+<body>
+	<p>In body</p>
+<!--	<div class="myDiv"></div>-->
+</body>
+</html>
