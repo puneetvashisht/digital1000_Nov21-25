@@ -43,7 +43,6 @@ PuneetVashisht@gmail.com
 	Selectors
 	Dynamic Elements
 	Animation
-	Validation
 	
 	Practice: 
 		Todo App (add css) : 30 - 40 mins
@@ -55,7 +54,9 @@ PuneetVashisht@gmail.com
 			TodoApp_Name_EmpId_EmailId
 
 		no extensions required
-	
+	Validation
+		Practice: 
+			Form (Username and Password) : 15 mins
 	
 3. AngularJS
 
