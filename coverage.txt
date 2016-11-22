@@ -41,12 +41,12 @@ PuneetVashisht@gmail.com
 	  
 	Syntax
 	Selectors
+	Dynamic Elements
+	
+	Practice: 
+		Todo App (add css) : 30 - 40 mins
 	
 	
-	
-	animations
-	validation
-	ajax
 	
 3. AngularJS
 
