@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Validation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script src="lib/angular/angular.min.js"></script>
+	<script>
+		var app = angular.module('myApp', []);
+		app.controller('login', function($scope){
+			$scope.submitForm = function(){
+				console.log($scope.user);
+//				return false;
+			}
+		})
+	</script>
+</head>
+<body ng-app="myApp" ng-controller="login">
+	<!--<h1 class="text-info">Hello World</h1>
+	<button class="btn btn-success">Login</button>
+	<button class="btn btn-danger">Logout</button>
+	<input type="button" class="btn btn-default btn-lg" value="some button" />
+	
+	<img src="//lorempixel.com/200/200" alt="" class="img-responsive img-circle">-->
+	<form name="loginForm" class="form-horizontal" ng-submit="submitForm()">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Username (Min5-Max10)</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="user.name" name="username" ng-minlength="5" ng-maxlength="10" class="form-control" id="inputEmail3" placeholder="Username" required>
+      <p ng-show="loginForm.username.$error.minlength" class="text-danger">Number of characters are less than 5</p>
+      <p ng-show="loginForm.username.$error.maxlength" class="text-danger">Greater than 10</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="user.password" name="password" ng-pattern="/^[a-z]/" class="form-control" id="inputPassword3" placeholder="Password" required>
+      <p ng-show="loginForm.password.$invalid && !loginForm.password.$pristine" class="text-danger">Enter a valid password</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button ng-disabled="loginForm.$invalid" type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>

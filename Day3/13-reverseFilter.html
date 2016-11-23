@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Filter Demo</title>
+	<script src="lib/angular/angular.min.js"></script>
+	<script>
+		var app = angular.module('app', []);
+		app.filter('reverse', function(){
+			return function(input){
+				return input.split('').reverse().join('')
+			}   
+		})
+		
+		app.controller('ctrl', function($scope){
+			
+			$scope.user = {
+				"name": "PuNEet",
+				"address": "delhi",
+				"age": 22
+			}
+			
+		})
+	</script>
+</head>
+<body ng-app="app" ng-controller="ctrl">
+	<h1>Name: {{user.name }}</h1>
+	<h1>Name: {{user.name | reverse}}</h1>
+	
+</body>
+</html>
