@@ -87,6 +87,16 @@ PuneetVashisht@gmail.com
 				squareRoot
 			Ctrls: SimpleCalcCtrl & ScientificCalcCtrl
 			
+	Filters : takes a value and returns new value
+		json
+		lowercase
+		uppercase
+		limitTo
+		orderBy
+		
+		capitalize
+		reverse
+			
 			
 4. NodeJS
 

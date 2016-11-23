@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Filter Demo</title>
+	<script src="lib/angular/angular.min.js"></script>
+	<script>
+		var app = angular.module('app', []);
+		app.filter('capitalize', function(){
+			return function(input){
+				console.log(input);
+				if(typeof input === 'string')
+					return input.charAt(0).toUpperCase()+input.slice(1).toLowerCase();
+				else {
+					return input;
+				}
+			}
+		})
+		app.controller('ctrl', function($scope){
+			
+			$scope.user = {
+				"name": "PuNEet",
+				"address": "delhi",
+				"age": 22
+			}
+			
+			$scope.employees = [{name: "hans"}, {name: "apurva"},{name: "shalab"},{name: "vinod"},{name: "puneet"}]
+			
+		})
+	</script>
+</head>
+<body ng-app="app" ng-controller="ctrl">
+	<h1>Name: {{user.name | lowercase}}</h1>
+	<h1>Name: {{user.name | uppercase}}</h1>
+	<h1>{{"user:"+ (user | json)}}</h1>
+	
+	<h1>LimitTo: </h1>
+	{{employees | limitTo:2}}
+	<!--<ul ng-repeat="employee in employees | limitTo:2">
+		<li>{{employee.name}}</li>
+	</ul>
+	-->
+	<h1>OrderBy: </h1>
+	{{employees | orderBy:'name'}}
+	
+	<ul ng-repeat="employee in employees | orderBy:'name' ">
+		<li>{{employee.name | capitalize}}</li>
+	</ul>
+	{{employees | capitalize}}
+</body>
+</html>
