@@ -1,14 +1,21 @@
 <html>
 <head>
-	<title>Jquery Demo</title>
+	<title>Angular Demo</title>
 	<script src="./lib/angular/angular.min.js"></script>
-	<script>
-	</script>
+	<style>
+		.error{
+			color: magenta;
+		}
+		.welcome{
+			color: green;
+		}
+	</style>
 </head>
 <body ng-app>
+	<input type="text" placeholder="Enter class name" ng-model="className">
 	<div>
 		Name:<input type="text" ng-model="user">
-		<div>Welcome {{user}}</div>
+		<div class="{{className}}">Welcome {{user}}</div>
 	</div>
 	<hr/>
 	<div>

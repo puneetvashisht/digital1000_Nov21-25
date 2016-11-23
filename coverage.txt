@@ -50,7 +50,7 @@ PuneetVashisht@gmail.com
 		https://drive.google.com/drive/folders/0ByYjtCTdrTECS1JQQUdyRTdQM0k?usp=sharing
 
 		Create a zip file and rename it to 
-			TodoApp_Name_EmpId_EmailId
+			AppName_Name_EmpId_EmailId
 
 		no extensions required
 	
