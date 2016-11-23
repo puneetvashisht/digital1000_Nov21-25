@@ -18,7 +18,7 @@ PuneetVashisht@gmail.com
 			brackets.io
 		
 	DOM Manipulation
-	Excercise:
+	Exercise:
 		image
 		click this image, image should be changed
 	Practicals: 
@@ -65,6 +65,29 @@ PuneetVashisht@gmail.com
 			30% html + 70% js/jquery
 		angular
 			50 Html + 50 js/angular
+			
+	module
+	controller
+	$rootScope vs $scope
+	Multiple module
+	service
+		It provides us method to keep data across the lifetime of the angular app
+		It provides us method to communicate data across the controllers in a consistent way
+		This is a singleton object and it gets instantiated only once per application
+		It is used to organize and share data and functions across the application	
+		
+		
+		Exercise: 30 Mins
+			Write a Calculator App. User two services as SimpleCalc and ScientificCalc.
+			SimpleCalc functions
+				add
+				mul
+			ScientificCalc functions
+				square
+				squareRoot
+			Ctrls: SimpleCalcCtrl & ScientificCalcCtrl
+			
+			
 4. NodeJS
 
 5. MongoDB
