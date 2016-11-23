@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Jquery Demo</title>
+	<script src="./lib/jquery/jquery-1.11.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(':text').keyup(function(){
+				$('#greet').html("Welcome "+$(this).val())
+			})
+		})
+	</script>
+</head>
+<body>
+	Name:<input type="text">
+	<div id="greet">Welcome </div>
+</body>
+</html>

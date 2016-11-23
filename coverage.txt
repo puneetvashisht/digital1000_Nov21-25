@@ -55,7 +55,16 @@ PuneetVashisht@gmail.com
 		no extensions required
 	
 3. AngularJS
-
+	js framework
+	use with any other js library
+	
+	basic example 
+		js
+			10% html + 90% js code
+		jquery
+			30% html + 70% js/jquery
+		angular
+			50 Html + 50 js/angular
 4. NodeJS
 
 5. MongoDB
