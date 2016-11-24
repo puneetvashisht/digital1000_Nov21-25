@@ -19,7 +19,7 @@
 			$scope.loadData = function(){
 				$http({
 					method: 'get',
-					url: 'http://127.0.0.1:57919/Day2/dummyServer/emp.json'
+					url: './../../Day2/dummyServer/emp.json'
 				})
 				.success(function(data){
 					console.log(data);
