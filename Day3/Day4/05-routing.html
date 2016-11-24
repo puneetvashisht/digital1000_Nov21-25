@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>Built-in Directives</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<style>
+		body{
+			margin: 0 50px;
+		}
+	</style>
+	<script src="./../lib/angular/angular.min.js"></script>
+	<script src="./../lib/angular/angular-route.min.js"></script>
+	<script>
+		var app = angular.module('myApp', ['ngRoute']);
+		app.controller('LoginController',function($scope){
+			$scope.login= function(){
+				console.log("Email is "+$scope.email)
+				console.log("Password is "+$scope.pwd)
+			}
+		})
+		app.config(function($routeProvider){
+			$routeProvider
+			.when('/',{
+				templateUrl: "./partials/home.html"
+			}).when('/login',{
+//				template: "SignIn Page"
+				templateUrl: "./partials/login.html",
+				controller: "LoginController"
+			}).when('/singup',{
+//				template: "SignUp Page"
+				templateUrl: "./partials/registration.html"
+			}).otherwise({
+//				template: "404 Page is not available"
+				redirectTo: "/"
+			})
+		})
+	</script>
+	
+</head>
+<body ng-app="myApp">
+	<header>I am header
+		<nav>
+			<ul>
+				<li><a ng-href="#/">Home</a></li>
+				<li><a ng-href="#/login">SignInPage</a></li>
+				<li><a ng-href="#/singup">SignUpPage</a></li>
+			</ul>
+		</nav>
+	</header>
+	<hr/>
+		I am page section
+		<div ng-view></div>
+	<hr/>
+	<footer>I am footer</footer>
+</body>
+</html>

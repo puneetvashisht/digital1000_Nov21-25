@@ -103,6 +103,9 @@ PuneetVashisht@gmail.com
 		Write a custome badge directive with dynamic values
 			empName
 			empSalary
+		Ajax/Http
+		Routing
+		
 4. NodeJS
 
 5. MongoDB
