@@ -1,5 +1,5 @@
 {
-	emps: [
+	"emps": [
 			{"name": "Puneet", "empId": "Niit2015", "salary": "500000"},
 			{"name": "Jai", "empId": "Lg2042", "salary": "900000"},
 			{"name": "Suraj", "empId": "Niit2015", "salary": "400000"},
