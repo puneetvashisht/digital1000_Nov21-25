@@ -99,7 +99,10 @@ PuneetVashisht@gmail.com
 	Form and validation
 	Day4:
 		Direcitive
-			
+		
+		Write a custome badge directive with dynamic values
+			empName
+			empSalary
 4. NodeJS
 
 5. MongoDB
