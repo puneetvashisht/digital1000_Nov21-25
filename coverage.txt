@@ -137,7 +137,20 @@ PuneetVashisht@gmail.com
 		
 		package.json
 		
+		
+6. Project
+	Create a poll application
+	Node: express, bodyParser, mongodb
+		package.json (pom.xml in maven)
+	Angular: routing, bootstrap
+		4 pages
+			1. Poll List (home page)
+			2. Poll Item
+			3. Poll Result
+			4. Create a new poll
+		
+		
 	
 
-feedback link
-
+Give your valueable feedback on below link
+	Angular JS : http://tcheck.co/HTRy2c

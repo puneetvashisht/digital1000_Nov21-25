@@ -1,0 +1,10 @@
+<h1>Poll List</h1>
+	<div class="form-group">
+		<input type="text" placeholder="Search poll" class="form-control" ng-model="search"/>
+	</div>
+<hr/>
+<div>
+	<ul ng-repeat="poll in polls | filter:search">
+		<li><a ng-href="" ng-click="openPoll(poll)">{{poll.ques}}</a></li>
+	</ul>
+</div>
