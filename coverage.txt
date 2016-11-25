@@ -107,6 +107,17 @@ PuneetVashisht@gmail.com
 		Routing
 		
 4. NodeJS
+	Nodejs is a JavaScript runtime built on Chrome's V8 JavaScript engine
+	javascript that runs on server
+	
+	download node.js from
+		https://nodejs.org/en/
+		
+		verify if it is installed successfully
+			node -v
+			npm -v
 
 5. MongoDB
+
+feedback link
 
