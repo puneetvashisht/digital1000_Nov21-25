@@ -119,9 +119,25 @@ PuneetVashisht@gmail.com
 
 	Server
 		express module from npm
+		Angular
+		
+	1. server to handle req with diff methods (get, put, post, etc)
+	2. body-parser to convert req to json
+	3. express.static to server client content from a directory
+	4. postman: use it to hit server (without html forms)
 	
 5. MongoDB
 	NoSql
+	1. install mongodb
+	2. create a directory (run db)
+	3. open terminal/cmd to run db in a dir
+		mongod --dbpath dirName
+	4. another cmd/terminal to fetch, put data from/in db
+		mongo
+		
+		package.json
+		
+	
 
 feedback link
 
